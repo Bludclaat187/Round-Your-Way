@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ConnectNow — Dating MVP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>ConnectNow</h1>
+    <p>Need someone to talk to? We’re here for you.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Create Your Profile</h2>
+      <form id="profileForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="e.g., Alex" required />
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" min="18" max="99" required />
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" placeholder="City, Country" required />
+
+        <label for="looking">Looking for:</label>
+        <select id="looking" required>
+          <option value="">Select...</option>
+          <option value="Friendship">Friendship</option>
+          <option value="Casual">Something casual</option>
+          <option value="Long-term">Long-term</option>
+        </select>
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" placeholder="Tell us a bit about yourself..."></textarea>
+
+        <button type="submit">Create Profile</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>People Near You</h2>
+      <div id="feed">
+        <!-- Profiles will appear here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Built with ❤️ and deployed via GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
